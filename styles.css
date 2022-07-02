@@ -165,7 +165,7 @@ header {
    
 }
 
-.caja-texto-uno h1, span {
+.caja-texto-uno h1, .caja-texto-uno span {
     background-color: white;
     padding-right: 10px;
 
@@ -203,41 +203,397 @@ header {
 
 /* SECCIÓN DOS */
 
-/* .seccion-dos {
+.seccion-dos {
     width: 100%;
     height: auto;
-    background-color: rgba(232, 232, 232, 0.677);
+    background-color: rgba(232, 232, 232, 0.413);
     display: flex;
     align-items: center;
     justify-content: center;
     
 }
 
+.caja-seccion-dos {
+
+    background-color: rgba(255, 255, 255, 0.758);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h4 {
+
+    background-color:rgb(105, 79, 45);
+    color: white;
+    font-size: clamp(25px, 2.5vw, 40px);
+    margin-top: 50px;
+    padding: 5px;
+    max-width: 90%;
+    text-align: center;
+}
 
 .caja-items {
     
     height: auto;
-    width: 90%;
-    background-color: rgba(255, 255, 255, 0.758);
+    width: 90vw;
+    
     display: flex;
-    gap: 30px;
+    gap: 120px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    padding: 50px;
+    padding-top: 70px;
+    
+   
 
 }
 
 .item {
 
     height: 250px;
-    width: 200px;
-    background-color: rgb(255, 255, 255);
+    min-width: 200px;
+    
     box-shadow: 0 0 10px black;
     border-radius: 20px;
-} */
+    border: 4px solid rgb(39, 39, 39);
+    filter: grayscale(100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+
+.item-1 {
+
+    background-image: url(/assets/zizek.jpg);
+    background-size: cover;
+    
+    
+}
+
+.item-1:hover {
+
+    color: #636363
+}
+
+.item-2 {
+
+    background-image: url(/assets/benjamin.jpg);
+    background-size: cover;
+    
+    
+}
+
+.item-2:hover {
+
+    color: #64c474;
+}
+
+
+.item-3 {
+
+    background-image: url(/assets/foucault.jpg);
+    background-size: cover;
+    
+    
+}
+
+.item-3:hover {
+
+    color: #64a1c0;
+}
+
+
+.item-4 {
+
+    background-image: url(/assets/kant.jpg);
+    background-size: cover;
+    
+    
+}
+
+.item-4:hover {
+
+    color:#657ff0
+
+}
+.item-5 {
+
+    background-image: url(/assets/spinoza.jpg);
+    background-size: cover;
+    
+}
+
+
+.item-5:hover {
+
+    background-size: cover;
+    color: #987024;
+}
+
+.item-6 {
+
+    background-image: url(/assets/descartes.jpg);
+    background-size: cover;
+  
+    
+}
+
+.item-6:hover {
+
+    color: #f06565
+}
+
+.item-7 {
+
+    background-image: url(/assets/sigloxx.jpg);
+    background-size: cover;
+    
+}
+
+.item-7:hover {
+
+    color: #a367a6
+
+}
+
+.item-8 {
+
+    background-image: url(/assets/sigloxix.jpg);
+    background-size: cover;
+    
+    
+}
+
+.item-8:hover {
+
+    color: #a7a466
+}
+
+
+.item:hover {
+
+    filter: grayscale(0%);
+    transition: 0.5s all ease;
+    transform: scale(1.01);
+    
+
+    
+}
+
+
+
+
+.item:hover h3 {
+
+    
+    transform: scale(1.005);
+    
+}
+
+
+.item-7:after, .item-8:after
+
+{
+    content: "NUEVO";
+   width: 100px;
+   height: 20px;
+   padding: 10px;
+   background-color: red;
+   color: white;
+   top: 0;
+   right: -20px;
+   position: absolute;
+   transform: rotate(30deg);
+   text-align: center;
+   font-weight: bold;
+   
+}
+
+h3 {
+    text-transform: uppercase;
+    background-color: white;
+    width: 100%;
+    height: 45px;
+    
+    border-radius: 0px 0px 18px 18px;
+    
+    
+    text-align: center;
+    padding: 12px;
+    
+}
 
 /* SECCIÓN DOS */
+
+/* SECCIÓN TRES */
+.seccion-tres {
+    width: 100%;
+    height: auto;
+    background-color: rgba(232, 232, 232, 0.200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 330px;
+
+    
+    
+}
+
+.caja-experiencias {
+    min-width: 330px;
+    height: auto;
+    width: 90vw;
+    background-color: rgba(255, 255, 255, 0.377);
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 40px;
+    padding-top: 70px;
+}
+
+
+article {
+    
+    display: grid;
+    grid-auto-flow: column;
+    height: auto;
+    width: 75%;
+    background-color: rgb(236, 236, 236);
+    place-items: center;
+    gap: 40px;
+    position: relative;
+    
+}
+.estrellas {
+   color:rgb(105, 79, 45);
+    display: flex;
+    gap: 10px;
+}
+
+h5 {
+    font-weight: 400;
+    width: 200px;
+    font-size: 30px;
+    
+}
+
+.estrellas-titulo {
+    padding: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.titulo-curso {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    
+
+}
+article:nth-child(2) {
+
+    width: 85%;
+}
+
+article:nth-child(3)
+
+{
+
+    width: 95%;
+}
+
+
+article blockquote {
+    width: auto;
+    font-size: clamp(20px, 1.5vw, 25px);
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 200px;
+    background-color: rgb(176, 176, 176);
+    gap: 10px;
+}
+
+.caja-foto-perfil {
+    
+    border-radius: 90px;
+    height: 70px;
+    width: 70px;
+    background-image:url(/assets/no-image.png);
+    background-size: contain;
+    border: 3px solid black;
+   
+}
+
+.martin {
+
+    background-image: url(/assets/persona.png);
+    
+}
+
+.nombre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 150px;
+    background-color:rgb(105, 79, 45);
+}
+
+.usuario h5 {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.benjamin span {
+    
+    font-size: 30px;
+    color: #64c474;
+    font-weight: 600;
+    width: 200px;
+}
+.sigloxix span {
+    font-size: 30px;
+    color: #a7a466;
+    font-weight: 600;
+    width: 200px;
+}
+
+.sigloxx span {
+    font-size: 30px;
+    color: #a367a6;
+    font-weight: 600;
+    width: 200px;
+    
+}
+
+.titulo-curso {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+        
+}
+
+
+/* SECCIÓN TRES */
+
 
 
 /* MEDIA QUERYS */
@@ -303,4 +659,66 @@ header {
         background-color:#cfcac3;
         
     }
+
+    @media screen and (max-width: 900px) {
+
+        .estrellas-titulo {
+
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h5 {
+
+            width: 80%;
+            text-align: center;
+        }
+
+        .caja-experiencias {
+            padding-top: 50px;
+            padding: 20px;
+            gap: 40px;
+            justify-content: center;
+            align-items: center;
+            }
+
+        article {
+            min-width: 330px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            
+
+        }
+
+        article blockquote {
+
+            text-align: center;
+        }
+
+        .usuario {
+
+            padding: 20px;
+        }
+        
+    }
+
+    .titulo-curso {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .estrellas-titulo {
+
+        padding-bottom: 0;
+    }
+    
+
 }
