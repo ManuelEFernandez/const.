@@ -435,6 +435,7 @@ h3 {
     width: 100%;
     height: auto;
     background-color: rgba(232, 232, 232, 0.200);
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -456,6 +457,7 @@ h3 {
     justify-content: center;
     padding-left: 40px;
     padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 
@@ -594,6 +596,166 @@ article blockquote {
 
 /* SECCIÓN TRES */
 
+/* SECCIÓN CUATRO */
+.seccion-cuatro {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 90vw;
+    padding: 110px 20px;
+    background-color: rgba(255, 255, 255, 0.638);
+    background-image: url(/assets/angelus.png);
+    background-size: cover;
+    min-width: 330px;
+   
+
+}
+
+
+.caja-contacto
+
+{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 325px;
+    width: auto;
+    height: auto;
+    background-color: rgb(197 159 110 / 63%);
+    box-shadow:0px 0px 15px rgb(105, 79, 45);
+    border-radius: 20px 20px 0px 0px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    position: relative;
+    gap: 10px;
+
+    
+}
+
+.caja-contacto:before {
+
+    content: "";
+    background-image: url(/assets/logodoss.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 136px;
+    width:  320px;
+    position: absolute;
+    top: -87px;
+}
+
+.caja-contacto-redes {
+
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.caja-redes {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 40px;
+    font-size: 30px;
+    color: white;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(105, 79, 45);
+    border-radius: 0px 0px 20px 20px;
+    box-shadow:0px 0px 15px rgb(105, 79, 45);
+}
+
+.caja-redes i {
+
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+
+
+  .fa-twitter:hover {
+
+    color: #8ecdf3;
+    text-shadow: 0px 0px 10px #8ecdf3;;
+  }
+
+  .fa-facebook:hover {
+  color: #98add9;
+  text-shadow: 0px 0px 10px #98add9;
+
+}
+
+.fa-instagram-square:hover {
+  color: #de799b;
+  text-shadow: 0px 0px 10px #de799b;
+  
+
+}
+
+.contacto-info {
+    max-width: 700px;
+    min-width: 300px;
+    background-color: white;
+    border-radius: 20px;
+
+    height: auto;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.contacto-mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 400px;
+    
+
+
+
+}
+
+
+.caja-general {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contacto-info h6 {
+
+    font-size: 20px;
+}
+
+
+
+.contacto-info h5 {
+
+    background-color:rgb(105, 79, 45);
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    width: 200px;
+    padding: 4px;
+}
+
+.cajadato {
+
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+}
+    /* SECCIÓN CUATRO */
+    
+
 
 
 /* MEDIA QUERYS */
@@ -719,6 +881,7 @@ article blockquote {
 
         padding-bottom: 0;
     }
-    
+
+ 
 
 }
