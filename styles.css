@@ -70,13 +70,17 @@ header {
 
 .nav-header {
 
-    width: 800px;
+    width: 1200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+   
 }
 
 .ul-header {
 
     display: flex;
-    gap: 30px;
+    gap: 60px;
     font-size: 20px;
     font-weight: 600;
 
@@ -807,7 +811,7 @@ article blockquote {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 50px;
+    padding: 60px 50px;
 }
 
 
@@ -933,7 +937,7 @@ footer span {
 /* MEDIA QUERYS */
 
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1320px) {
 
     .ul-header li:hover:after {
 
@@ -970,7 +974,7 @@ footer span {
         height: auto;
         text-align: center;
         background-color:#e0dbd5;
-        width: 80vw;
+        width: 50vw;
         opacity: 1;
         position: absolute;
         top: 130px;
@@ -1105,4 +1109,101 @@ footer span {
     
  
 
+}
+
+
+.caja-registro {
+    margin-top: 90px;
+    background-color: rgba(255, 255, 255, 0.835);
+    min-width: 300px;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 25px;
+    position: relative;
+    
+}
+
+.caja-registro label {
+
+    display: block;
+}
+
+.main-dos { 
+    padding: 20px 30px;
+
+    height: calc(100vh - 130px);
+    background: linear-gradient(to top, #dec9ac, #d7c3a8);
+    justify-content: flex-start;
+    background-image: url(/assets/angelus.png);
+    background-size: cover;
+}
+
+.campos {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.caja-registro h4 {
+    margin-top: 25px;
+    font-size: clamp(18px, 1.5vw, 32px);
+}
+
+.campos input {
+    margin-top: 5px;
+    width: 240px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid #432401;
+    padding-left: 10px;
+    box-shadow: 0px 0px 10px #4324015e;;
+}
+
+.caja-registro button {
+
+    margin-top: 5px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid #432401;
+    padding-left: 10px;
+    box-shadow: 0px 0px 10px #4324015e;;
+}
+
+.caja-registro button:hover {
+
+    box-shadow: 5px 5px 0px #432401;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    
+}
+    .caja-registro:before {
+        content: "";
+        background-image: url(../assets/logodoss.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 136px;
+    width:  320px;
+    position: absolute;
+    top: -87px;
+        
+    }
+
+    
+@media screen and (max-width: 400px) {
+
+    .caja-registro {
+
+       margin-top: 70px;
+    }
 }
