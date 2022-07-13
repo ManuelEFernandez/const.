@@ -80,8 +80,8 @@ header {
 .ul-header {
 
     display: flex;
-    gap: 60px;
-    font-size: 18px;
+    gap: 40px;
+    font-size: 16px;
     font-weight: 600;
 
 }
@@ -99,8 +99,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 4px;
-    top: 30px;
+    height: 3px;
+    top: 20px;
     background-color: rgb(171, 127, 69);
     width: 100%;
     animation-name: hover-header;
@@ -974,7 +974,7 @@ footer span {
 
 
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1040px) {
 
     .ul-header li:hover:after {
 
