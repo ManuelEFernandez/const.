@@ -493,7 +493,16 @@ article {
     place-items: center;
     gap: 40px;
     position: relative;
+    box-shadow: 8px 8px 0px rgb(216, 174, 119);
     
+}
+
+article:hover {
+
+    transform: scale(1.01);
+    cursor: pointer;
+    transition: 0.3s all ease;
+
 }
 .estrellas {
    color:rgb(105, 79, 45);
@@ -776,7 +785,7 @@ article blockquote {
     align-items: center;
     font-size: 18px;
 }
-    /* SECCIÓN CUATRO */
+/* SECCIÓN CUATRO */
 
  /* SECCIÓN TRESB */
 
@@ -825,7 +834,8 @@ article blockquote {
     text-align: center;
     
     min-width: 310px;
-    width: 60%;
+    width: 80%;
+    max-width: 800px;
     background-color: white;
     border-radius: 20px;
     height: auto;
@@ -864,7 +874,10 @@ article blockquote {
 }
 
 
-     /* SECCIÓN CINCO */
+
+    /* SECCIÓN TRESB */
+
+
     /* FOOTER*/
     
 footer {
@@ -935,6 +948,8 @@ footer span {
  /* FOOTER*/
 
 /* MEDIA QUERYS */
+
+
 
 
 @media screen and (max-width: 1320px) {
@@ -1022,13 +1037,14 @@ footer span {
             }
 
         article {
-            min-width: 330px;
+            min-width: 300px;
             padding: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             gap: 10px;
+            box-shadow: 2px 2px 0px rgb(216, 174, 119);
             
 
         }
@@ -1061,6 +1077,9 @@ footer span {
 
     @media screen and (max-width: 730px) {
 
+
+       
+         
         .ul-footer {
 
             flex-direction: column;
@@ -1112,6 +1131,8 @@ footer span {
 }
 
 
+
+ /* SECCIÓN REGISTRO/ACCESO */
 .caja-registro {
     margin-top: 90px;
     background-color: rgba(255, 255, 255, 0.835);
@@ -1207,3 +1228,6 @@ footer span {
        margin-top: 70px;
     }
 }
+
+
+ /* SECCIÓN REGISTRO/ACCESO */
