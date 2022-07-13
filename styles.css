@@ -53,7 +53,7 @@ a {
 
 header {
 
-    height: 130px;
+    height: 110px;
     background-color: #e0dbd5;
     width:  100%;
     display: flex;
@@ -81,7 +81,7 @@ header {
 
     display: flex;
     gap: 60px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 
 }
@@ -150,6 +150,7 @@ header {
 
 }
 
+
 .caja-texto-uno, .caja-imagen-uno {
     display: flex;
     flex-direction: column;
@@ -165,7 +166,7 @@ header {
 
 .caja-texto-uno {
 
-    max-width: 800px;
+    max-width: 700px;
     min-width: 320px;
 
 }
@@ -272,10 +273,16 @@ h4 {
 
 }
 
+.caja-logo img {
+
+    height: 79px;
+    width: 179px;
+}
+
 .item {
 
-    height: 250px;
-    min-width: 200px;
+    height: 230px;
+    width: 180px;
     
     box-shadow: 0 0 10px black;
     border-radius: 20px;
@@ -494,6 +501,7 @@ article {
     gap: 40px;
     position: relative;
     box-shadow: 8px 8px 0px rgb(216, 174, 119);
+    padding: 10px;
     
 }
 
@@ -508,6 +516,7 @@ article:hover {
    color:rgb(105, 79, 45);
     display: flex;
     gap: 10px;
+    
 }
 
 h5 {
@@ -519,9 +528,13 @@ h5 {
 
 .estrellas-titulo {
     padding: 20px;
+    
+ 
     width: 200px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     gap: 10px;
 }
 
@@ -529,7 +542,9 @@ h5 {
     display: flex;
     flex-direction: column;
     width: 200px;
-    
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
 
 }
 article:nth-child(2) {
@@ -558,7 +573,8 @@ article blockquote {
     align-items: center;
     flex-direction: column;
     height: 100%;
-    width: 200px;
+    width: 100%;
+    min-width: 150px;
     background-color: rgb(176, 176, 176);
     gap: 10px;
 }
@@ -621,7 +637,13 @@ article blockquote {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    text-align: left;
         
+}
+
+.titulo-curso h5, .titulo-curso span {
+
+    text-align: left;
 }
 
 
@@ -976,13 +998,13 @@ footer span {
         cursor: pointer;
         position: absolute;
         right: 30px;
-        top: 50px;
+        top: 35px;
         font-size: 30px;
     }
 
     .nav-header input:checked ~ ul {
 
-        font-size: 20px;
+        font-size: 18px;
         pointer-events: unset;
         display: flex;
         flex-direction: column;
@@ -992,7 +1014,7 @@ footer span {
         width: 50vw;
         opacity: 1;
         position: absolute;
-        top: 130px;
+        top: 110px;
         right: 5vw;
         border-right: 4px solid rgb(171, 127, 69);
         border-left: 4px solid rgb(171, 127, 69);
@@ -1003,7 +1025,7 @@ footer span {
 
     .ul-header li {
 
-        padding: 30px 0px;
+        padding: 25px 0px;
         border-bottom: 4px solid rgb(171, 127, 69);
     }
 
@@ -1011,6 +1033,12 @@ footer span {
 
         background-color:#cfcac3;
         
+    }
+
+    .titulo-curso {
+       
+        justify-content: flex-start;
+        text-align: left;
     }
 
     @media screen and (max-width: 900px) {
@@ -1058,7 +1086,10 @@ footer span {
 
             padding: 20px;
         }
-        
+        .titulo-curso h5, .titulo-curso span {
+
+            text-align: center;
+        }
     }
 
     .titulo-curso {
@@ -1069,11 +1100,8 @@ footer span {
         text-align: center;
     }
 
-    .estrellas-titulo {
-
-        padding-bottom: 0;
-    }
-
+    
+   
 
     @media screen and (max-width: 730px) {
 
@@ -1158,7 +1186,8 @@ footer span {
 .main-dos { 
     padding: 20px 30px;
 
-    height: calc(100vh - 130px);
+    height: auto;
+    min-height: 100vh;
     background: linear-gradient(to top, #dec9ac, #d7c3a8);
     justify-content: flex-start;
     background-image: url(/assets/angelus.png);
